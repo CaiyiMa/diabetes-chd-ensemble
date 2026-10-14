@@ -15,8 +15,6 @@ This repository collects the **current manuscript-relevant** workflows from four
 | Methods 2.4; Results 3.3: RF9, RF25, Weighted XGB25, weighted ensemble, Platt | `scripts/01_full_data_models.py` | Directly organized from `IJMS_publication_code_model.ipynb` cells 2/4/6/8/10/12/14; numeric reproduction requires private data |
 | Methods 2.5; Results 3.4; Supplementary Note 3 | `scripts/partition_30_x25.py` and `scripts/partition_10_x25.py` | Both copied from the **FINAL** matched X25 4-base/2-meta implementation; path defaults sanitized |
 | Methods 2.6; Results 3.3; threshold and PR analyses | `scripts/evaluate_predictions.py` | New read-only evaluator for privately generated predictions; author verification against Supplementary Table S7 required |
-| Supplementary Figure S7 | `scripts/plot_supp_figure_s7.py` | Reproduces **plotted tabular values**, not patient-level metrics from scratch |
-| Figures 2–4; feature importance and subgroup models | See `docs/REPRODUCIBILITY_GAPS.md` | Original code includes historical, partially divergent analysis. Not claimed fully reproducible here |
 
 **Important:** the uploaded alternative script `ijms-r1-validate_sex_age_subgroups.py` evaluated each subgroup model on its **matching subgroup of the held-out cohort**. The final manuscript instead evaluates subgroup-*trained* models on the **same entire held-out cohort**. Therefore that script is intentionally **not** included as a reproduction of Figure 3; its performance is a different estimand. Likewise, the originally submitted 33-subset/132-feature TabTransformer and its balanced 770-record test evaluation were withdrawn and are **not included as valid models**.
 

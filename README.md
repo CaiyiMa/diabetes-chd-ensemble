@@ -28,7 +28,6 @@ The `scripts/` directory contains the following implementations:
 | `clinical_univariate_audit.py` | Exploratory univariate analysis of clinical characteristics |
 | `evaluate_predictions.py` | Evaluation of ROC-AUC, average precision, calibration, and classification metrics |
 | `predict_new_patients.py` | Generation of predictions using previously fitted models |
-| `plot_supp_figure_s7.py` | Visualization of alternative modeling strategy performance |
 
 The partition-based approaches use the same 25-predictor set (X25), four first-stage algorithms (LR, RF, XGBoost, and MLP), and two second-stage alternatives (Meta-LR and Transformer). They differ primarily in the number of partitions and the resulting training class ratios.
 
